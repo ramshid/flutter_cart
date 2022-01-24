@@ -80,7 +80,7 @@ class FlutterCart {
   }
 
   updateCouponInfo(int index, bool status) {
-    _cartItemList[index].productDetails.is_donating = status;
+    _cartItemList[index].productDetails.isDonating = status;
     message = CartResponseWrapper(true, _successMessage, _cartItemList);
     return message;
   }
